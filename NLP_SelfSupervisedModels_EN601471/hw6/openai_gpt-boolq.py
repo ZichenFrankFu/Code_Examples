@@ -76,7 +76,7 @@ if __name__ == '__main__':
     demo, prompt, true_labels = generate_prompt(train_path=train_path,dev_path=dev_path, num_demos=8)
 
     # Personal API key
-    OPENAI_API_KEY = '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'
+    OPENAI_API_KEY = 'personal API key'
     GPT_out = GPT_response(demo, prompt, OPENAI_API_KEY)
 
     GPT_out = pickle.load(open("GPT_out.pickle", "rb"))
